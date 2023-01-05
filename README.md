@@ -1,2 +1,3 @@
 # Bob-Jumping
-Steer bob with arrowkeys
+##You steer Bob with arrow-keys.
+
