@@ -1,0 +1,115 @@
+/* STANDARD SETTINGS */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+	background-color: rgb(150, 241, 211);
+	/* margin: 10px; */
+}
+
+.container {
+	border: 2px solid black;
+	height: 700px;
+	width: 1400px;
+	margin-left: 50px;
+	margin-top: 20px;
+	position: relative;
+}
+
+/* BOB SLIDE */
+.face-slide {
+	position: absolute;
+	background-color: beige;
+	bottom: 0;
+	left: 0;
+	width: 11rem;
+	height: 9rem;
+	border-radius: 10rem;	
+}
+.face {
+	position: absolute;
+	background-color: beige;
+	bottom: 0;
+	left: 0;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 10rem;	
+}
+
+
+/* WRAPPING ARROWS */
+.arrow-container {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: 
+	". . up . . "
+	". . . . ."
+	"left . eye . right"
+	". . . . ."
+	". . down . ."
+	;
+}
+
+.up-click {
+	grid-area: up;
+}
+
+.left-click {
+	grid-area: left;
+}
+
+.right-click {
+	grid-area: right;
+}
+
+.down-click {
+	grid-area: down;
+}
+
+.eye-container {
+	grid-area: eye;
+}
+
+
+
+
+
+.eye-container {
+	display: flex;
+	padding-left: 0.1rem;
+	padding-top: 0.1rem;
+	/* background-color: white;
+	width: 4rem;
+	height: 4rem; */
+}
+
+.eye {
+	position: relative;
+	background-color: white;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 10rem;
+	margin: 0.5rem 0.1rem 0.9rem 0.7rem 
+}
+
+.pupil {
+	background-color: black;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 10rem;
+	margin: 10px 10px 10px 10px
+}
+
+.arrow:hover {
+	cursor: pointer;
+	background-color: rgb(73, 150, 21);
+}
